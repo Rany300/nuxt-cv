@@ -5,8 +5,9 @@ import {
   faTwitch,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import { faCircleArrowDown, faList } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTwitterSquare, faTwitch, faGithubSquare);
+library.add(faTwitterSquare, faTwitch, faGithubSquare, faCircleArrowDown, faList);
 
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false;

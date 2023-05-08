@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import MainLayout from "~/layouts/Main.vue";
+import introduction from "~/components/introduction.vue";
+import navigation from "~/components/navigation.vue";
 
 
 </script>
@@ -7,18 +9,23 @@ import MainLayout from "~/layouts/Main.vue";
 <template>
   <MainLayout>
     <template v-slot:header>
-      <div class="header">
-        <font-awesome-icon icon="fa-brands fa-twitter-square" />
-
-      </div>
+      <navigation menu-sticky  />
     </template>
     <template v-slot:default>
-      This will be injected as the default slot.
+      <introduction />
     </template>
     <template v-slot:footer>
-      This will be injected as the footer slot.
     </template>
   </MainLayout>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss">
+
+
+
+
+
+
+
+
+</style>

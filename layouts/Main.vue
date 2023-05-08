@@ -16,6 +16,6 @@
 
 <style lang="scss" scoped>
 .layout {
-  @apply bg-dark-gray text-white min-h-screen flex flex-col;
+  @apply bg-dark-gray text-white min-h-fit flex flex-col;
 }
 </style>
