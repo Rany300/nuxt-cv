@@ -96,21 +96,25 @@ defineProps({
   transition: all 0.5s ease-out;
 }
 .slide-enter-to {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
 }
 .slide-enter-from {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: -100%;
 }
 
 .slide-leave-to {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: -100%;
 }
 
 .slide-leave-from {
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
 }
 </style>
