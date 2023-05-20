@@ -79,7 +79,8 @@ onMounted(() => {
     <img
       src="/pictures/profile-pic1.jpeg"
       class="rounded-full opacity-0"
-      ref="img" />
+      ref="img" 
+      />
     <h2
       class="text-4xl font-bol text-center font-bold cursor-pointer opacity-0"
       ref="introText">

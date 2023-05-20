@@ -1,31 +1,20 @@
 <script lang="ts" setup>
 import MainLayout from "~/layouts/Main.vue";
-import introduction from "~/components/introductionView.vue";
 import navigation from "~/components/navigation.vue";
-
-
+import contactView from "~/components/contactView.vue";
 </script>
 
 <template>
-  <MainLayout>
+   <MainLayout>
     <template v-slot:header>
       <navigation menu-sticky  />
     </template>
     <template v-slot:default>
-      <introduction />
+      <contactView />
     </template>
     <template v-slot:footer>
     </template>
   </MainLayout>
 </template>
 
-<style scoped lang="scss">
-
-
-
-
-
-
-
-
-</style>
+<style scoped></style>
