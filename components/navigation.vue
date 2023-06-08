@@ -14,7 +14,9 @@ defineProps({
 </script>
 
 <template>
-  <div :class="{ 'menu-bar': menuSticky }">
+  
+  <div :class="{ 'sticky-menu-bar': menuSticky }" class="menu-bar">
+    <nuxt-link to="/" class="page-name">Rany.dev</nuxt-link>
     <div class="flex justify-end m-4">
       <ClientOnly>
         <font-awesome-icon
@@ -45,14 +47,26 @@ defineProps({
   transform-origin: center;
 }
 
+.page-name {
+  @apply cursor-pointer text-4xl m-4 font-bold text-white sticky top-0;
+}
+
 .rotate-90 {
   transform: rotate(450deg);
 }
 
-.menu-bar {
+.sticky-menu-bar {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #333333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+.menu-bar {
+  @apply flex justify-between items-center;
+  z-index: 100;
 }
 
 .menu {

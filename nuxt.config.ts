@@ -7,7 +7,6 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    "@formkit/nuxt",
     [
       "nuxt-mail",
       {

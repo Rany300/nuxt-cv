@@ -27,5 +27,4 @@ import navigation from "~/components/navigation.vue";
 
 
 
-
 </style>
