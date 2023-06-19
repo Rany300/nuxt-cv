@@ -14,7 +14,6 @@ defineProps({
 </script>
 
 <template>
-  
   <div :class="{ 'sticky-menu-bar': menuSticky }" class="menu-bar">
     <nuxt-link to="/" class="page-name">Rany.dev</nuxt-link>
     <div class="flex justify-end m-4">
@@ -66,21 +65,19 @@ defineProps({
 
 .menu-bar {
   @apply flex justify-between items-center;
-  z-index: 100;
+  z-index: 30;
 }
 
 .menu {
-  @apply fixed flex flex-col top-0 left-0 w-[80vh] h-screen bg-gray-800;
-  z-index: 100;
+  @apply fixed flex flex-col top-0 left-0 max-w-full  w-[80vh] h-screen bg-gray-800;
+  z-index: 50;
 
   a {
     @apply transition-all text-3xl text-white p-4 hover:bg-red-500 hover:text-gray-100;
     transition-duration: 0.3s;
     color: white;
     text-decoration: none;
-
     margin: 1rem;
-
     background-color: #363d45;
     &:hover {
       background-color: #4b5563;

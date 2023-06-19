@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { defineProps, ref, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 
 interface TimelineEvent {
   id: number;
@@ -33,7 +33,7 @@ function animateTimelineLine() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const event = props.events.find(
-        (e) => e.id === Number(entry.target.dataset.eventId)
+        (e) => e.id === Number(entry.target.id)
       );
       if (event) {
         event.isActive = entry.isIntersecting;

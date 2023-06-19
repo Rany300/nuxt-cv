@@ -5,13 +5,13 @@ import {
   faTwitch,
   faGithubSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import { faCircleArrowDown, faList } from "@fortawesome/free-solid-svg-icons";
+import { faCircleArrowDown, faEnvelope, faList, faPhone } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTwitterSquare, faTwitch, faGithubSquare, faCircleArrowDown, faList);
+library.add(faTwitterSquare, faTwitch, faGithubSquare, faCircleArrowDown, faList, faPhone, faEnvelope);
 
 // This is important, we are going to let Nuxt worry about the CSS
 config.autoAddCss = false;
 
 export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.component("font-awesome-icon", FontAwesomeIcon, {});
+  nuxtApp.vueApp.component("font-awesome-icon", FontAwesomeIcon);
 });

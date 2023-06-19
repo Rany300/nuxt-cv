@@ -56,9 +56,9 @@ onMounted(() => {
 <template>
   <div class="flex flex-col justify-between h-screen">
     <div
-      class="flex flex-col justify-center items-center h-full m-12 gap-y-40"
+      class="flex flex-col justify-center items-center h-full m-12 gap-y-32"
       ref="textContainer">
-      <h1 class="text-8xl font-bold text-center typing">
+      <h1 class="text-8xl font-bold mt-32 text-center typing">
         Hi, I'm <span class="text-blue-500" ref="name"></span>
       </h1>
       <h2 class="text-4xl font-bol text-center font-bold fadeIn opacity-0">
